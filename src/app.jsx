@@ -12,9 +12,18 @@ import './app.less'
 
 class App extends Component {
 
+  componentDidMount () {}
+
+  componentDidShow () {}
+
+  componentDidHide () {}
+
+  componentDidCatchError () {}
+
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index', // 登录页面
+      'pages/home/index', // 首页
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -23,14 +32,6 @@ class App extends Component {
       navigationBarTextStyle: 'black'
     }
   }
-
-  componentDidMount () {}
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
-  componentDidCatchError () {}
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数

@@ -35,7 +35,10 @@ export default class Index extends Component {
       });
       return;
     }
-    // 跳转到其他页面
+    // 跳转到主页
+    Taro.navigateTo({
+      url: '/pages/home/index'
+    })
   }
 
   handleChange = (value, key) => {
